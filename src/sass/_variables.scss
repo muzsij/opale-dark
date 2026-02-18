@@ -100,7 +100,7 @@ $body-bg:                       #1a1a2e !default;
 $text-color:                    #e0e0e0 !default;
 
 $link-color:                    #64b5f6 !default;
-$link-hover-color:              #ef5350 !default;
+$link-hover-color:              #aad3f4 !default;
 $link-hover-decoration:         underline !default;
 $link-closed-decoration:        line-through !default;
 $link-color-issue-closed:       $gray-500 !default;
@@ -230,7 +230,7 @@ $table-list-highlight-rows:     true !default;
 
 $table-bg:                      transparent !default;
 $table-accent-factor:           .08 !default;
-$table-hover-factor:            .4 !default;
+$table-hover-factor:            .12 !default;
 $table-bg-accent:               rgba($white, $table-accent-factor) !default;
 $table-bg-hover:                rgba($white, $table-hover-factor) !default;
 $table-bg-active:               $table-bg-hover !default;
