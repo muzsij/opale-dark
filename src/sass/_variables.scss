@@ -229,7 +229,7 @@ $table-list-color-even-rows:    false !default;
 $table-list-highlight-rows:     true !default;
 
 $table-bg:                      transparent !default;
-$table-accent-factor:           .15 !default;
+$table-accent-factor:           .08 !default;
 $table-hover-factor:            .4 !default;
 $table-bg-accent:               rgba($white, $table-accent-factor) !default;
 $table-bg-hover:                rgba($white, $table-hover-factor) !default;
@@ -604,8 +604,8 @@ $pagination-active-bg:          $brand-primary !default;
 $pagination-active-border:      $brand-primary !default;
 
 $pagination-inactive-color:     $gray-500 !default;
-$pagination-inactive-bg:        $gray-50 !default;
-$pagination-inactive-border:    $gray-100 !default;
+$pagination-inactive-bg:        #16213e !default;
+$pagination-inactive-border:    #0f3460 !default;
 
 
 // Tabs
