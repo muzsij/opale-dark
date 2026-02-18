@@ -1,4 +1,4 @@
-Opale
+Opale Dark
 =====
 
 A Redmine 6.x theme.
