@@ -105,7 +105,8 @@ div.jstElements {
     opacity: 1;
     background-color: transparent;
     box-shadow: none;
-    color: #e0e0e0;
+    color: #1f1f1f;
+    filter: invert(1);
     vertical-align: top;
 
     &::before {
@@ -114,106 +115,88 @@ div.jstElements {
 
     &:hover,
     &:focus {
-      background-color: color.adjust(variables.$tab-hover-bg, $lightness: -3%);
+      background-color: rgba(variables.$black, .15);
       color: variables.$white;
     }
   }
 
   .jstb_strong {
       background-image: url("/jstoolbar/bold.svg");
-      filter: invert(1);
   }
 
   .jstb_em {
       background-image: url("/jstoolbar/italic.svg");
-      filter: invert(1);
   }
 
   .jstb_ins {
       background-image: url("/jstoolbar/underline.svg");
-      filter: invert(1);
   }
 
   .jstb_del {
       background-image: url("/jstoolbar/strikethrough.svg");
-      filter: invert(1);
   }
 
   .jstb_code {
       background-image: url("/jstoolbar/letter-c.svg");
-      filter: invert(1);
   }
 
   .jstb_h1 {
       background-image: url("/jstoolbar/h1.svg");
-      filter: invert(1);
   }
 
   .jstb_h2 {
       background-image: url("/jstoolbar/h2.svg");
-      filter: invert(1);
   }
 
   .jstb_h3 {
       background-image: url("/jstoolbar/h3.svg");
-      filter: invert(1);
   }
 
   .jstb_ul {
       background-image: url("/jstoolbar/list.svg");
-      filter: invert(1);
   }
 
   .jstb_ol {
       background-image: url("/jstoolbar/list-numbers.svg");
-      filter: invert(1);
   }
 
   .jstb_tl {
       background-image: url("/jstoolbar/list-check.svg");
-      filter: invert(1);
   }
 
   .jstb_bq {
       background-image: url("/jstoolbar/indent-increase.svg");
-      filter: invert(1);
   }
 
   .jstb_unbq {
       background-image: url("/jstoolbar/indent-decrease.svg");
-      filter: invert(1);
   }
 
   .jstb_pre::before {
       content: "pre";
-      color: #e0e0e0;
+      color: #1f1f1f;
       font-size: 10px;
       font-weight: 700
   }
 
   .jstb_precode {
       background-image: url("/jstoolbar/code.svg");
-      filter: invert(1);
   }
 
   .jstb_link {
       background-image: url("/jstoolbar/wiki_link.svg");
-      filter: invert(1);
   }
 
   .jstb_img {
       background-image: url("/jstoolbar/image.svg");
-      filter: invert(1);
   }
 
   .jstb_table {
       background-image: url("/jstoolbar/table.svg");
-      filter: invert(1);
   }
 
   .jstb_help {
       background-image: url("/jstoolbar/help.svg");
-      filter: invert(1);
   }
 }
 
