@@ -357,12 +357,6 @@ div.add-note {
     .select2-results__option {
       color: variables.$text-color;
 
-      &--highlighted,
-      &--highlighted.select2-results__option--selectable {
-        background-color: variables.$component-active-bg;
-        color: variables.$component-active-color;
-      }
-
       &[aria-selected="true"] {
         background-color: variables.$component-bg;
         color: variables.$gray-500;
@@ -394,8 +388,7 @@ div.add-note {
     }
   }
 
-  .select2-results__option--highlighted[aria-selected],
-  .select2-results__option--highlighted.select2-results__option--selectable {
+  .select2-results__option--highlighted[aria-selected] {
     background-color: variables.$component-active-bg;
     color: variables.$component-active-color;
   }
