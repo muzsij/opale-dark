@@ -233,16 +233,30 @@ div.add-note {
         padding-top: variables.$input-padding-vertical;
         padding-bottom: variables.$input-padding-vertical;
         border: 0;
+        color: variables.$input-color;
         font-size: variables.$font-size-base;
         line-height: variables.$line-height-base;
       }
 
+      .select2-selection__placeholder {
+        color: variables.$input-color-placeholder;
+      }
+
       .select2-selection__arrow {
         height: variables.$input-height-base;
+
+        b {
+          border-color: variables.$gray-500 transparent transparent;
+        }
       }
 
       .select2-selection__clear {
         border: 0;
+        color: variables.$gray-500;
+
+        &:hover {
+          color: variables.$text-color;
+        }
       }
     }
 
@@ -256,6 +270,17 @@ div.add-note {
         margin-right: 3px;
         padding-top: 0;
         padding-bottom: 0;
+        border-color: variables.$component-border;
+        background-color: variables.$component-bg;
+        color: variables.$text-color;
+      }
+
+      .select2-selection__choice__remove {
+        color: variables.$gray-500;
+
+        &:hover {
+          color: variables.$text-color;
+        }
       }
 
       .select2-search--inline {
@@ -263,6 +288,7 @@ div.add-note {
           height: auto;
           padding-top: 0;
           padding-bottom: 0;
+          color: variables.$input-color;
           line-height: inherit;
         }
       }
@@ -274,6 +300,7 @@ div.add-note {
         box-shadow variables.$transition-time ease-in-out;
       border-color: variables.$input-border;
       background-clip: padding-box;
+      background-color: variables.$input-bg;
       box-shadow: inset 0 1px 2px rgb(0 0 0 / .075);
 
       &.icon {
@@ -302,11 +329,65 @@ div.add-note {
           box-shadow: inset 0 1px 2px color.adjust(variables.$black, $alpha: -.925), 0 0 0 2px color.adjust(variables.$input-border-focus, $alpha: variables.$input-shadow-focus-alpha);
         }
       }
+
+      &--open {
+        .select2-selection--single .select2-selection__arrow b {
+          border-color: transparent transparent variables.$gray-500;
+        }
+      }
     }
 
     .select2-search__field {
+      background-color: variables.$input-bg;
+      color: variables.$input-color;
+
+      &::placeholder {
+        color: variables.$input-color-placeholder;
+      }
+
       &:focus {
         border-color: color.adjust(variables.$input-border-focus, $alpha: variables.$input-border-focus-alpha);
+      }
+    }
+
+    .select2-results__options {
+      background-color: variables.$component-bg;
+    }
+
+    .select2-results__option {
+      color: variables.$text-color;
+
+      &--highlighted {
+        background-color: variables.$component-active-bg;
+        color: variables.$component-active-color;
+      }
+
+      &[aria-selected="true"] {
+        background-color: variables.$component-bg;
+        color: variables.$gray-500;
+      }
+
+      &[aria-disabled="true"] {
+        color: variables.$gray-500;
+      }
+    }
+  }
+}
+
+.select2-container--default {
+  .select2-dropdown {
+    border-color: variables.$input-border;
+    background-color: variables.$component-bg;
+  }
+
+  .select2-search--dropdown {
+    .select2-search__field {
+      border-color: variables.$input-border;
+      background-color: variables.$input-bg;
+      color: variables.$input-color;
+
+      &::placeholder {
+        color: variables.$input-color-placeholder;
       }
     }
   }
