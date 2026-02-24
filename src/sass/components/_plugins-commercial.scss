@@ -388,10 +388,11 @@ div.add-note {
     }
   }
 
-  .select2-results__option--highlighted[aria-selected] {
-    background-color: variables.$component-active-bg;
-    color: variables.$component-active-color;
-  }
+}
+
+body .select2-container--default .select2-results__option--highlighted[aria-selected] {
+  background-color: variables.$component-active-bg;
+  color: variables.$component-active-color;
 }
 
 span.tag-label-color {
