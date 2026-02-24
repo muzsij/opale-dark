@@ -357,7 +357,8 @@ div.add-note {
     .select2-results__option {
       color: variables.$text-color;
 
-      &--highlighted {
+      &--highlighted,
+      &--highlighted.select2-results__option--selectable {
         background-color: variables.$component-active-bg;
         color: variables.$component-active-color;
       }
@@ -378,6 +379,7 @@ div.add-note {
   .select2-dropdown {
     border-color: variables.$input-border;
     background-color: variables.$component-bg;
+    color: variables.$text-color;
   }
 
   .select2-search--dropdown {
@@ -390,6 +392,12 @@ div.add-note {
         color: variables.$input-color-placeholder;
       }
     }
+  }
+
+  .select2-results__option--highlighted[aria-selected],
+  .select2-results__option--highlighted.select2-results__option--selectable {
+    background-color: variables.$component-active-bg;
+    color: variables.$component-active-color;
   }
 }
 
