@@ -194,7 +194,7 @@
       }
 
       td {
-        color: variables.$gray-950;
+        color: variables.$issue-text;
       }
     }
 
@@ -278,7 +278,7 @@
     }
 
     .value {
-      color: variables.$gray-950;
+      color: variables.$issue-text;
 
       &:empty::after {
         content: "-";
